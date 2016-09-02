@@ -115,13 +115,16 @@ figure below; plant components are disjoint</li>
 <li>Each zone measures cumulative energy consumed (E1) and instantaneous power (E2) in
 disjoint sections of the plant covering one or more components</li>
 <li>Faults are independent of one another. Also, a fault F is independent of data outside of a
-three hour window of time before the fault start time.
-The participants will have access to the following data sets:</li>
-<li>Training data for approximately thirty plants (e.g. see Plant 1 described above).</li>
-<li>Test data for approximately ten plants. For each test plant, the first half of the fault file
-data is complete, while the second half is incomplete. Some faults of type 1-5 are
-missing</li>
+three hour window of time before the fault start time.</li>
 </ul>
+
+<p><img src="https://github.com/robot007/PHM15/blob/gh-pages/images/Architecture.png" alt="System Architecture"></p>
+
+<p>The participants will have access to the following data sets:
+1. Training data for approximately thirty plants (e.g. see Plant 1 described above).
+2. Test data for approximately ten plants. For each test plant, the first half of the fault file
+data is complete, while the second half is incomplete. Some faults of type 1-5 are
+missing</p>
 
 <h3>
 <a id="submission-and-scoring" class="anchor" href="#submission-and-scoring" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Submission and Scoring</h3>
@@ -142,6 +145,8 @@ false positives (fp; other faults incorrectly classified as fault j) and false n
 incorrectly classified as another fault). The overall prediction score of a plant test file is
 computed with a formula dependent on the table of confusion scores for the first N=5 fault
 codes:</p>
+
+<p><img src="https://github.com/robot007/PHM15/blob/gh-pages/images/Score.png" alt="Score"></p>
 
 <p>The overall prediction score of a submission will sum the scores for all test plants.
 The Data Challenge committee will make available a validation set of data consisting of
